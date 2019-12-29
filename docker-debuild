@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euxo pipefail
+dpkg-buildpackage -us -uc -b
+mv ../*.deb ./
